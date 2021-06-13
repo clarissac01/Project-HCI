@@ -1,9 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    
-}
 
+
+*{
+    
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+}
 header{
     background-color: #d8c3a5;
     display: flex;
@@ -13,6 +17,8 @@ header{
     padding-left: 10vw;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+
+
 
 header img{
     width: 7vw;
@@ -35,6 +41,7 @@ header nav ul li{
 header a{
     text-decoration: none;
 }
+
 
 footer{
     background-color: #e85a4f;
@@ -68,60 +75,44 @@ footer .contact-us, footer .contact-us div{
 footer .icon a img{
     width: 1.5vw;
 }
-
-.error-p{
-    color: #e85a4f;
-}
-
-.content{
-    background-color: #eae7dc;
-}
-
-.content #about{
-    padding: 5vh 11vw;
-}
-
-.content #about p{
-    font-size: 3em;
-}
-
-.content #about .desc{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10vh;
-    text-align: center;
-    color: darkgoldenrod;
-}
-
-.content #about .about-title{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4em;
-    color: white;
-    text-align: left;
-    text-decoration: underline #8e8d8a;
-}
-
-.content #news{
-    background-color: #e98074;
-    padding: 5vh 11vw;
-    /* background-color: #f0ebf4; */
-}
-
-.content #news .news-title{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 4em;
-    margin-top: 10vh;
-    color: whitesmoke;
-    text-decoration: underline #e85a4f;
-}
-
-.content #news .iamge-slider{
+.content-div{
+    width: 100vw;
     display: flex;
+    justify-content: center;
+    padding: 4vw 0;
+}
+.gallery-div{
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1rem;
+    
 }
 
-.content #news .leftimage, .content #news .rightimage{
-    width: 30vw;
+img{
+    width: 100%;
 }
 
-.content #news .centerimage{
-    width: 50vw;
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    header{
+        height: 28vw;
+        flex-direction: column;
+    }
+    header nav ul{
+        font-size: 3.5vw;
+    }
+    header img{
+        width: 20vw;
+        height: auto;
+    }
+    .gallery-div {
+      flex-direction: column;
+    }
 }
+
