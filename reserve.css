@@ -96,6 +96,35 @@ footer .icon a img{
     padding:  3vw 0;
 }
 
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dbutton{
+    background-color: transparent;
+    border: none;
+}
+li{
+    font-size: 1.4vw;
+    overflow: hidden;
+    text-decoration: none;
+}
+hr{
+    color: white;
+    
+}
+.dcontent{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    
+    background-color: #d8c3a5;
+}
+
+.dropdown:hover .dcontent{
+    display: block;
+}
+
 form{
     margin-top: 20px;
     display: flex;
@@ -119,6 +148,17 @@ form{
     font-size: 1.0vw;
 
 }
+.tc-div{
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    justify-content: center;
+    align-items: center;
+    margin: 0.7vw 0 ;
+    font-size: 1.0vw;
+
+}
+.tc-div 
 
 .product-form{
     width: 60%;

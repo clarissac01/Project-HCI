@@ -18,7 +18,7 @@ function validate(e){
     let phone = document.getElementById('phone-input').value
     let address = document.getElementById('address-input').value
     let message=document.getElementById('purchase-message')
-
+    let tc=document.getElementById('tc-input').checked
 
     if(id=="Select"){
         message.innerHTML = "You must select a product"
@@ -40,6 +40,9 @@ function validate(e){
     }
     else if (address.length <= 0){
         message.innerHTML = "Address must be filled"
+    }
+    else if (!tc){
+        message.innerHTML = "You must aggree to the terms and conditions"
     }
     else{
         message.innerHTML = "Purchase Succesful"
