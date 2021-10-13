@@ -16,15 +16,39 @@
         <img src="LOGO.png" alt="" srcset="">
         <nav>
             <ul>
-                <a href="./index.html#top">
-                    <li>about</li>
-                </a>
-                <a href="./index.html#news">
-                    <li>news</li>
-                </a>
-                <a href="./products.html">
-                    <li>products</li>
-                </a>
+                <div class="dropdown">
+                    <div class="dbutton">
+                        <li>home</li>
+                    </div>
+                    <div class="dcontent">
+                        <a href="./index.html#top">
+                            <hr>
+                            <li>about</li>
+                        </a>
+                        <a href="./index.html#news">
+                            <hr>
+                            <li>news</li>
+                        </a>
+                    </div>
+                </div>
+                <div class="dropdown">                        
+                    <div class="dbutton">
+                        <li>products</li>
+                    </div>
+                    <div class="dcontent">
+                        <a href="./products.html#vixian">
+                            <hr>
+                            <li>vixian</li>
+                            
+                        </a>
+                        <a href="./products.html#kawasako">
+                            <hr>
+                            <li>kawasako</li>
+                        </a>
+                    </div>
+                </div>
+
+
                 <a href="./gallery.html">
                     <li>gallery</li>
                 </a>
@@ -44,10 +68,18 @@
                 <div class="product-form sub-form">
                     <div class="productdata-div">
                         <div class="input-div">
+                            
                             <h3 class="input-desc">
-                                Id 
+                                Select Product
                             </h3>
-                            <input class="input-space" id="id-input" type="number">
+                            <select class="input-space" id="id-input">
+                                <option>Select</option>
+                                <option>Vixian Type +</option>
+                                <option>Vixian SF</option>
+                                <option>Vixian Mini</option>
+                                <option>Kawasako TKL</option>
+                                <option>Kawasako Type Nano</option>
+                            </select>
                         </div>
                         <div class="input-div">
                             <h3 class="input-desc">
@@ -69,6 +101,7 @@
                         </div> 
                         
                     </div>
+                    
                                   
                 </div>
                 <div class="user-form sub-form">
@@ -95,7 +128,13 @@
                 </div>
                 
             </div>
-            
+            <div class="tc-div">
+                <input id="tc-input" class="input-space" type="checkbox">
+                
+                <h3 class="input-desc">
+                    agree to terms and conditions
+                </h3>
+            </div>
             <div class="button-container">
                 <p id="purchase-message"></p>
                 <button type="submit" class="submit-button">

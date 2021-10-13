@@ -63,6 +63,35 @@ footer img{
     height: auto;
 }
 
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dbutton{
+    background-color: transparent;
+    border: none;
+}
+li{
+    font-size: 1.4vw;
+    overflow: hidden;
+    text-decoration: none;
+}
+hr{
+    color: white;
+    
+}
+.dcontent{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    
+    background-color: #d8c3a5;
+}
+
+.dropdown:hover .dcontent{
+    display: block;
+}
+
 footer .icon a{
     text-decoration: none;
 }
@@ -99,7 +128,7 @@ img{
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
     header{
         height: 28vw;
         flex-direction: column;

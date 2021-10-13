@@ -45,6 +45,7 @@ footer{
     letter-spacing: 0.05em;
     color: maroon;
     padding: 0.9vh 1vw;
+    
 }
 
 footer #title{
@@ -88,6 +89,7 @@ footer .icon a img{
 .content #about .desc{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 10vh;
+    font-size: 2vw;
     text-align: center;
     color: darkgoldenrod;
 }
@@ -95,7 +97,7 @@ footer .icon a img{
 .content #about .about-title{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4em;
-    color: white;
+    color: saddlebrown;
     text-align: left;
     text-decoration: underline #8e8d8a;
 }
@@ -103,19 +105,71 @@ footer .icon a img{
 .content #news{
     background-color: #e98074;
     padding: 5vh 11vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
     /* background-color: #f0ebf4; */
 }
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+.dbutton{
+    background-color: transparent;
+    border: none;
+}
+li{
+    font-size: 1.4vw;
+    overflow: hidden;
+    text-decoration: none;
+}
+hr{
+    color: white;
+    
+}
+.dcontent{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    
+    background-color: #d8c3a5;
+}
 
+.dropdown:hover .dcontent{
+    display: block;
+}
+
+.point {
+    cursor: pointer;
+    height: 1vw;
+    width: 1vw;
+
+    background-color: rgb(226, 226, 226);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+  
 .content #news .news-title{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 4em;
-    margin-top: 10vh;
+    margin-top: 1vw;
+    margin-bottom: 1vw;   
     color: whitesmoke;
-    text-decoration: underline #e85a4f;
+    text-decoration: underline #c00000;
 }
 
-.content #news .iamge-slider{
+.image-slider {
+    width: 30vw;
     display: flex;
+    overflow: hidden;
+}
+  
+.image-slider > .image-slide > img {
+    object-fit: cover;
 }
 
 .content #news .leftimage, .content #news .rightimage{
@@ -123,5 +177,8 @@ footer .icon a img{
 }
 
 .content #news .centerimage{
-    width: 50vw;
+    width: 30vw;
+}
+.active, .dot:hover {
+    background-color: #717171;
 }
